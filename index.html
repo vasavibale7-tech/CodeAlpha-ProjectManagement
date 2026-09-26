@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeAlpha Project Management Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ProjectFlow</h1>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#projects">Projects</a>
+            <a href="#tasks">Tasks</a>
+        </nav>
+    </header>
+
+    <!-- Login -->
+    <section class="login-section" id="login">
+
+        <h2>Login</h2>
+
+        <section class="login-section" id="login">
+
+    <h2>Login</h2>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Username"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+    >
+
+    <button onclick="login()">Login</button>
+
+    <p id="loginMessage"></p>
+
+    <hr>
+
+    <h2>Register</h2>
+
+    <input
+        type="text"
+        id="registerUsername"
+        placeholder="Create username"
+    >
+
+    <input
+        type="password"
+        id="registerPassword"
+        placeholder="Create password"
+    >
+
+    <button onclick="registerUser()">Sign Up</button>
+
+    <p id="registerMessage"></p>
+
+</section>
+
+
+    <!-- Dashboard -->
+    <main id="dashboard">
+
+        <section class="welcome">
+            <h2>Project Management Dashboard</h2>
+
+            <p>
+                Manage projects, assign tasks and track progress easily.
+            </p>
+        </section>
+
+
+        <!-- Create Project -->
+        <section class="project-section" id="projects">
+
+            <h2>Create Project</h2>
+
+            <input
+                type="text"
+                id="projectName"
+                placeholder="Project name"
+            >
+
+            <textarea
+                id="projectDescription"
+                placeholder="Project description"
+            ></textarea>
+
+            <button onclick="createProject()">
+                Create Project
+            </button>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section class="projects">
+
+            <h2>Projects</h2>
+
+            <div id="projectContainer"></div>
+
+        </section>
+
+
+        <!-- Create Task -->
+        <section class="task-section" id="tasks">
+
+            <h2>Create Task</h2>
+
+            <input
+                type="text"
+                id="taskTitle"
+                placeholder="Task title"
+            >
+
+            <input
+                type="text"
+                id="taskAssignee"
+                placeholder="Assign to"
+            >
+
+            <input
+                type="date"
+                id="taskDueDate"
+            >
+
+            <select id="taskStatus">
+
+                <option value="To Do">
+                    To Do
+                </option>
+
+                <option value="In Progress">
+                    In Progress
+                </option>
+
+                <option value="Completed">
+                    Completed
+                </option>
+
+            </select>
+
+            <textarea
+                id="taskDescription"
+                placeholder="Task description"
+            ></textarea>
+
+            <button onclick="createTask()">
+                Create Task
+            </button>
+
+        </section>
+
+
+        <!-- Task Board -->
+        <section class="task-board">
+
+            <h2>Task Board</h2>
+
+            <div class="board">
+
+                <div class="column">
+
+                    <h3>To Do</h3>
+
+                    <div id="todoTasks"></div>
+
+                </div>
+
+
+                <div class="column">
+
+                    <h3>In Progress</h3>
+
+                    <div id="progressTasks"></div>
+
+                </div>
+
+
+                <div class="column">
+
+                    <h3>Completed</h3>
+
+                    <div id="completedTasks"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
