@@ -21,11 +21,13 @@ A simple full-stack Project Management Tool developed as part of the CodeAlpha i
 ## Technologies Used
 
 ### Frontend
+
 - HTML
 - CSS
 - JavaScript
 
 ### Backend
+
 - Node.js
 - Express.js
 - SQLite3
@@ -46,46 +48,71 @@ CodeAlpha_ProjectManagement/
 ├── script.js
 ├── .gitignore
 └── README.md
-How to Run
-1. Install Node.js
+```
+
+## How to Run
+
+### 1. Install Node.js
 
 Make sure Node.js is installed on your system.
 
-2. Open the Backend Folder
+### 2. Open the Project
 
-Open the project in VS Code and open the terminal.
+Open the `CodeAlpha_ProjectManagement` folder in VS Code.
 
+### 3. Open the Backend Folder
+
+Open the VS Code terminal and run:
+
+```bash
 cd backend
-3. Install Dependencies
+```
+
+### 4. Install Dependencies
+
+Run:
+
+```bash
 npm install
-4. Start the Backend Server
+```
+
+### 5. Start the Backend Server
+
+Run:
+
+```bash
 node server.js
+```
 
-The server will run at:
+The backend server will run at:
 
+```text
 http://localhost:3000
-5. Open the Website
+```
 
-Open index.html in your browser.
+### 6. Open the Website
 
-Task Board
+Open `index.html` in your browser.
+
+## Task Board
 
 The application provides three task status categories:
 
-To Do
-In Progress
-Completed
+- To Do
+- In Progress
+- Completed
 
-Users can change the task status and delete tasks.
+Users can create tasks, assign tasks, set due dates, change task status, delete tasks, and add comments.
 
-Database
+## Database
 
 The project uses SQLite to store:
 
-Users
-Projects
-Tasks
-Comments
-Project Status
+- Users
+- Projects
+- Tasks
+- Comments
 
-Completed
+## Project Status
+
+**Completed**
